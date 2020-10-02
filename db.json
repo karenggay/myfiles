@@ -1,4 +1,5 @@
 {
+	"objPeople": [
 	{ 
 		"username": "Karissa",
 		"password": "12345"
@@ -11,5 +12,6 @@
 		"username": "Angel",
 		"password": "forever"
 	}
+		]
 }
 
