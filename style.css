@@ -1,0 +1,91 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100";
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+	font-family: "Lato", Arial, san-serif;
+}
+section{
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	position: relative;
+	animation: change 10s ease-in-out infinite;
+}
+.box{
+  width: 50%;
+  height: 90%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+  border-radius: 10px;
+}
+.box div{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 5;
+}
+.box input[type = "text"],.box input[type = "password"],textarea{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: left;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 70%;
+  height: 20%;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  
+  border-color: #2ecc71;
+}
+button{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+button:hover{
+  background: #2ecc71;
+}
+textarea{
+  resize: none;
+}
+label{
+  font-size: 40px;
+ margin-right: 330px;
+ margin-top: 20px;
+}
+@keyframes change {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
